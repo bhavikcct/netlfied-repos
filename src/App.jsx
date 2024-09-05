@@ -10,11 +10,11 @@ function App() {
   const [count, setCount] = useState(0)
 
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(checkForNewBuild, 2000);
+  useEffect(() => {
+    const intervalId = setInterval(checkForNewBuild, 2000);
 
-  //   return () => clearInterval(intervalId); 
-  // }, []);
+    return () => clearInterval(intervalId); 
+  }, []);
 
   
 
