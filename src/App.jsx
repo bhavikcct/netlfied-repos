@@ -26,9 +26,9 @@ function App() {
     
       <h1>Vite + React  </h1>
       <div className="card">
-        {/* <button onClick={() => setCount((count) => count  + 1)}>
+        <button onClick={() => setCount((count) => count  + 1)}>
           count is {count}  
-        </button> */}
+        </button>
         <p>
         Edit <code>src/App.jsx</code> 
         </p>
@@ -37,7 +37,10 @@ function App() {
 
 
       </p>
-      <ToastContainer />
+      <ToastContainer
+      position='top-center'
+      autoClose={5000}
+      />
     </>
   )
 }
