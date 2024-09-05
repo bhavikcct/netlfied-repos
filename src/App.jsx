@@ -6,6 +6,7 @@ import { checkForNewBuild } from './checkForNewBuild'
 import { Route, Routes } from 'react-router-dom'
 import LogInPage from './pages/login-page'
 import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [count, setCount] = useState(0)
