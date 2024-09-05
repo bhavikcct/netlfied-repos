@@ -9,11 +9,11 @@ export async function checkForNewBuild() {
     const currentTimestamp = localStorage.getItem("build-timestamp");
 
     if (currentTimestamp && currentTimestamp !== newTimestamp) {
-      localStorage.setItem("build-timestamp", newTimestamp);
       toast.info("New version available. Click to update.");
       window.location.reload();
       console.log(122);
     }
+    localStorage.setItem("build-timestamp", newTimestamp);
   } catch (error) {
     console.error("Error checking for new build:", error);
   }
