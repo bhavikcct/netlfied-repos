@@ -9,10 +9,11 @@ export async function checkForNewBuild() {
       const currentTimestamp = localStorage.getItem('build-timestamp');
   
       if (currentTimestamp && currentTimestamp !== newTimestamp) {
+        console.log(122)
         console.log('New build detected. Reloading page.');
         alert('New build detected. Reloading page.');
-        toast('New Build uploaded')
         window.location.reload();
+        toast.success('New build detected. Reloading page.');
       }
   
       localStorage.setItem('build-timestamp', newTimestamp);
