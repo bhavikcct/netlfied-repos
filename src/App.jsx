@@ -5,6 +5,7 @@ import './App.css'
 import { checkForNewBuild } from './checkForNewBuild'
 import { Route, Routes } from 'react-router-dom'
 import LogInPage from './pages/login-page'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,9 +34,10 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-      Click on the Vite and React logos to learn more 
+
 
       </p>
+      <ToastContainer />
     </>
   )
 }

@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 export async function checkForNewBuild() {
     try {
       const response = await fetch('/build-timestamp.txt');
@@ -9,6 +11,7 @@ export async function checkForNewBuild() {
       if (currentTimestamp && currentTimestamp !== newTimestamp) {
         console.log('New build detected. Reloading page.');
         alert('New build detected. Reloading page.');
+        toast('New Build uploaded')
         window.location.reload();
       }
   
