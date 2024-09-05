@@ -24,7 +24,7 @@ function App() {
       <Route path='/login' element={<LogInPage />} />
     </Routes>
     
-      <h1>Vite + React  45454545454545454545 </h1>
+      <h1>Vite + React  </h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
