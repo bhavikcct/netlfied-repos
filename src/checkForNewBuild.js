@@ -10,14 +10,9 @@ export async function checkForNewBuild() {
 
     if (currentTimestamp && currentTimestamp !== newTimestamp) {
       localStorage.setItem("build-timestamp", newTimestamp);
-      toast.info('New version available. Click to update.');
+      toast.info("New version available. Click to update.");
       console.log(122);
-      if (navigator.serviceWorker.controller) {
-        navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
-      }
-      // window.location.reload();
     }
-
   } catch (error) {
     console.error("Error checking for new build:", error);
   }
