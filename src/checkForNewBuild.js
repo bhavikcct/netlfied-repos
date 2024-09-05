@@ -8,6 +8,7 @@ export async function checkForNewBuild() {
   
       if (currentTimestamp && currentTimestamp !== newTimestamp) {
         console.log('New build detected. Reloading page.');
+        alert('New build detected. Reloading page.');
         window.location.reload();
       }
   
