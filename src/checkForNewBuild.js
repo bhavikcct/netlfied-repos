@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 import { useState } from "react";
-import Modal from "./Modal"; 
+import Modal from "./modal/build-modal";
 export function useCheckForNewBuild() {
   const [showModal, setShowModal] = useState(false);
 
